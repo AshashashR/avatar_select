@@ -1,0 +1,170 @@
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LIVE2D AVATAR SELECTION</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <section class="menu">
+                <input onclick="menuSelection('js_hair_style')" id="hair_style" type="radio" name="category" checked><label for="hair_style">髪型</label>
+                <input onclick="menuSelection('js_hair_color')" id="hair_color" type="radio" name="category"><label for="hair_color">髪色</label>
+                <input onclick="menuSelection('js_eyes')" type="radio" id="eyes" name="category"><label for="eyes">目</label>
+                <input onclick="menuSelection('js_lips')" type="radio" id="lips" name="category"><label for="lips">口</label>
+                <input onclick="menuSelection('js_body')" type="radio" id="body" name="category"><label for="body">体</label>
+            </section>
+
+            <section class="categories">
+
+                <section class="hair_style" id="js_hair_style">
+                    <input class="color01" id="hair_style01" type="radio" name="hair_style" value="style01"><label for="hair_style01"><img class="hair_style01" src="./img/haircolor-1.png" alt=""></label>
+                    <input class="color02" id="hair_style02" type="radio" name="hair_style" value="style01"><label for="hair_style02"><img class="hair_style02" src="./img/haircolor-2.png" alt=""></label>
+    
+                    <input class="color03 init" id="hair_style03" type="radio" name="hair_style" value="style01" checked><label for="hair_style03"><img class="hair_style03" src="./img/haircolor-3.png" alt=""></label>
+                    <input class="color04" id="hair_style04" type="radio" name="hair_style" value="style01"><label for="hair_style04"><img class="hair_style04" src="./img/haircolor-4.png" alt=""></label>
+    
+                    <input class="color05" id="hair_style05" type="radio" name="hair_style" value="style01"><label for="hair_style05"><img class="hair_style05" src="./img/haircolor-5.png" alt=""></label>
+                    <input class="color01" id="hair_style06" type="radio" name="hair_style" value="style02"><label for="hair_style06"><img class="hair_style06" src="./img/haircolor-6.png" alt=""></label>
+    
+                    <input class="color02" id="hair_style07" type="radio" name="hair_style" value="style02"><label for="hair_style07"><img class="hair_style07" src="./img/haircolor-7.png" alt=""></label>
+                    <input class="color03 init" id="hair_style08" type="radio" name="hair_style" value="style02"><label for="hair_style08"><img class="hair_style08" src="./img/haircolor-8.png" alt=""></label>
+    
+                    <input class="color04" id="hair_style09" type="radio" name="hair_style" value="style02"><label for="hair_style09"><img class="hair_style09" src="./img/haircolor-9.png" alt=""></label>
+                    <input class="color05" id="hair_style10" type="radio" name="hair_style" value="style02"><label for="hair_style10"><img class="hair_style10" src="./img/haircolor-10.png" alt=""></label>
+    
+                    <input class="color01" id="hair_style11" type="radio" name="hair_style" value="style03"><label for="hair_style11"><img class="hair_style11" src="./img/haircolor-11.png" alt=""></label>
+                    <input class="color02" id="hair_style12" type="radio" name="hair_style" value="style03"><label for="hair_style12"><img class="hair_style12" src="./img/haircolor-12.png" alt=""></label>
+    
+                    <input class="color03 init" id="hair_style13" type="radio" name="hair_style" value="style03"><label for="hair_style13"><img class="hair_style13" src="./img/haircolor-13.png" alt=""></label>
+                    <input class="color04" id="hair_style14" type="radio" name="hair_style" value="style03"><label for="hair_style14"><img class="hair_style14" src="./img/haircolor-14.png" alt=""></label>
+    
+                    <input class="color05" id="hair_style15" type="radio" name="hair_style" value="style03"><label for="hair_style15"><img class="hair_style15" src="./img/haircolor-15.png" alt=""></label>
+                    <input class="color01" id="hair_style16" type="radio" name="hair_style" value="style04"><label for="hair_style16"><img class="hair_style16" src="./img/haircolor-16.png" alt=""></label>
+    
+                    <input class="color02" id="hair_style17" type="radio" name="hair_style" value="style04"><label for="hair_style17"><img class="hair_style17" src="./img/haircolor-17.png" alt=""></label>
+                    <input class="color03 init" id="hair_style18" type="radio" name="hair_style" value="style04"><label for="hair_style18"><img class="hair_style18" src="./img/haircolor-18.png" alt=""></label>
+    
+                    <input class="color04" id="hair_style19" type="radio" name="hair_style" value="style04"><label for="hair_style19"><img class="hair_style19" src="./img/haircolor-19.png" alt=""></label>
+                    <input class="color05" id="hair_style20" type="radio" name="hair_style" value="style04"><label for="hair_style20"><img class="hair_style20" src="./img/haircolor-20.png" alt=""></label>
+    
+                    <input class="color01" id="hair_style21" type="radio" name="hair_style" value="style05"><label for="hair_style21"><img class="hair_style21" src="./img/haircolor-21.png" alt=""></label>
+                    <input class="color02" id="hair_style22" type="radio" name="hair_style" value="style05"><label for="hair_style22"><img class="hair_style22" src="./img/haircolor-22.png" alt=""></label>
+    
+                    <input class="color03 init" id="hair_style23" type="radio" name="hair_style" value="style05"><label for="hair_style23"><img class="hair_style23" src="./img/haircolor-23.png" alt=""></label>
+                    <input class="color04" id="hair_style24" type="radio" name="hair_style" value="style05"><label for="hair_style24"><img class="hair_style24" src="./img/haircolor-24.png" alt=""></label>
+                    <input class="color05" id="hair_style25" type="radio" name="hair_style" value="style05"><label for="hair_style25"><img class="hair_style25" src="./img/haircolor-25.png" alt=""></label>
+    
+                </section>
+
+                <section class="hair_color" id="js_hair_color">
+                    <input onclick="colorSelection('color01')" class="color01" id="hair_color01" type="radio" name="hair_color" value="color01"><label for="hair_color01"><img src="./img/color-1.png" alt=""></label>
+                    <input onclick="colorSelection('color02')" class="color02" id="hair_color02" type="radio" name="hair_color" value="color02"><label for="hair_color02"><img src="./img/color-2.png" alt=""></label>
+                    <input onclick="colorSelection('color03')" class="color03" id="hair_color03" type="radio" name="hair_color" value="color03" checked><label for="hair_color03"><img src="./img/color-3.png" alt=""></label>
+                    <input onclick="colorSelection('color04')" class="color04" id="hair_color04" type="radio" name="hair_color" value="color04"><label for="hair_color04"><img src="./img/color-4.png" alt=""></label>
+                    <input onclick="colorSelection('color05')" class="color05" id="hair_color05" type="radio" name="hair_color" value="color05"><label for="hair_color05"><img src="./img/color-5.png" alt=""></label>    
+                </section>
+
+                <section class="eyes" id="js_eyes">
+                    <input type="radio" name="eyes" checked><label for="eyes01"><img class="eyes01" src="img/eyes-1.png" alt=""></label>
+                    <input type="radio" name="eyes"><label for="eyes02"><img class="eyes02" src="img/eyes-2.png" alt=""></label>
+                    <input type="radio" name="eyes"><label for="eyes03"><img class="eyes03" src="img/eyes-3.png" alt=""></label>
+                    <input type="radio" name="eyes"><label for="eyes04"><img class="eyes04" src="img/eyes-4.png" alt=""></label>
+                    <input type="radio" name="eyes"><label for="eyes05"><img class="eyes05" src="img/eyes-5.png" alt=""></label>
+                </section>
+
+                <section class="lips" id="js_lips">
+                    <input type="radio" name="lips"><label for="lips01" checked><img class="lips01" src="img/lips-1.png" alt=""></label>
+                    <input type="radio" name="lips"><label for="lips02"><img class="lips02" src="img/lips-2.png" alt=""></label>
+                    <input type="radio" name="lips"><label for="lips03"><img class="lips03" src="img/lips-3.png" alt=""></label>
+                    <input type="radio" name="lips"><label for="lips04"><img class="lips04" src="img/lips-4.png" alt=""></label>
+                    <input type="radio" name="lips"><label for="lips05"><img class="lips05" src="img/lips-5.png" alt=""></label>
+                </section>
+
+                <section class="body" id="js_body">
+                    <input type="radio" name="body"><label for="body01" checked><img class="body01" src="img/body-1.png" alt=""></label>
+                    <input type="radio" name="body"><label for="body02"><img class="body02" src="img/body-2.png" alt=""></label>
+                    <input type="radio" name="body"><label for="body03"><img class="body03" src="img/body-3.png" alt=""></label>
+                    <input type="radio" name="body"><label for="body04"><img class="body04" src="img/body-4.png" alt=""></label>
+                    <input type="radio" name="body"><label for="body05"><img class="body05" src="img/body-5.png" alt=""></label>
+                </section>
+
+            </section>
+
+            <div class="display" id="js_display">
+
+                <div class="hair_display" id="js_hair_display">
+                    <img class="hair_style01 color01" src="./img/haircolor-1.png" alt="">
+                    <img class="hair_style02 color02" src="./img/haircolor-2.png" alt="">
+    
+                    <img class="hair_style03 color03 active" src="./img/haircolor-3.png" alt="">
+                    <img class="hair_style04 color04" src="./img/haircolor-4.png" alt="">
+    
+                    <img class="hair_style05 color05" src="./img/haircolor-5.png" alt="">
+                    <img class="hair_style06 color01" src="./img/haircolor-6.png" alt="">
+    
+                    <img class="hair_style07 color02" src="./img/haircolor-7.png" alt="">
+                    <img class="hair_style08 color03" src="./img/haircolor-8.png" alt="">
+    
+                    <img class="hair_style09 color04" src="./img/haircolor-9.png" alt="">
+                    <img class="hair_style10 color05" src="./img/haircolor-10.png" alt="">
+    
+                    <img class="hair_style11 color01" src="./img/haircolor-11.png" alt="">
+                    <img class="hair_style12 color02" src="./img/haircolor-12.png" alt="">
+    
+                    <img class="hair_style13 color03" src="./img/haircolor-13.png" alt="">
+                    <img class="hair_style14 color04" src="./img/haircolor-14.png" alt="">
+    
+                    <img class="hair_style15 color05" src="./img/haircolor-15.png" alt="">
+                    <img class="hair_style16 color01" src="./img/haircolor-16.png" alt="">
+    
+                    <img class="hair_style17 color02" src="./img/haircolor-17.png" alt="">
+                    <img class="hair_style18 color03" src="./img/haircolor-18.png" alt="">
+    
+                    <img class="hair_style19 color04" src="./img/haircolor-19.png" alt="">
+                    <img class="hair_style20 color05" src="./img/haircolor-20.png" alt="">
+    
+                    <img class="hair_style21 color01" src="./img/haircolor-21.png" alt="">
+                    <img class="hair_style22 color02" src="./img/haircolor-22.png" alt="">
+    
+                    <img class="hair_style23 color03" src="./img/haircolor-23.png" alt="">
+                    <img class="hair_style24 color04" src="./img/haircolor-24.png" alt="">
+                    <img class="hair_style25 color05" src="./img/haircolor-25.png" alt="">
+                </div>
+
+                <div class="body_display" id="js_body_display">
+                    <img class="body01 init" src="img/body-1.png" alt="">
+                    <img class="body02" src="img/body-2.png" alt="">
+                    <img class="body03" src="img/body-3.png" alt="">
+                    <img class="body04" src="img/body-4.png" alt="">
+                    <img class="body05" src="img/body-5.png" alt="">
+                </div>
+
+                <div class="eyes_display" id="js_eyes_display">
+                    <img class="eyes01 init" src="img/eyes-1.png" alt="">
+                    <img class="eyes02" src="img/eyes-2.png" alt="">
+                    <img class="eyes03" src="img/eyes-3.png" alt="">
+                    <img class="eyes04" src="img/eyes-4.png" alt="">
+                    <img class="eyes05" src="img/eyes-5.png" alt="">
+                </div>
+
+                <div class="lips_display" id="js_lips_display">
+                    <img class="lips01 init" src="img/lips-1.png" alt="">
+                    <img class="lips02" src="img/lips-2.png" alt="">
+                    <img class="lips03" src="img/lips-3.png" alt="">
+                    <img class="lips04" src="img/lips-4.png" alt="">
+                    <img class="lips05" src="img/lips-5.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

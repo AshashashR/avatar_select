@@ -1,0 +1,145 @@
+html,
+body {margin: 0;padding: 0; border: 0;}
+
+*,
+*:before,
+*:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;
+    -ms-box-sizing: border-box;box-sizing: border-box;}
+
+/* wrapper DIV */
+
+.wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #dddddd; 
+}
+
+/* ////// SIDEBAR MENU //////*/
+
+.menu {
+    background-color: #dddddd;
+    width: 120px;
+    border-right: 1px solid #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.menu input {
+    margin: 15px 0;
+}
+
+/* INPUTS */
+input:hover,label{cursor: pointer;}
+input:hover,label:hover{opacity: .8;}
+img{width: 100px;height: auto;}
+
+.hair_style input[type="radio"], 
+.hair_color input[type="radio"], 
+.eyes input[type="radio"], 
+.lips input[type="radio"], 
+.body input[type="radio"] {display: none;}
+
+.hair_style input + label {display: none;}
+.hair_style input.active + label {display: block;}
+.hair_style input.init + label {display: block;}
+
+.eyes label, .lips label {
+    display: inline-block;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+    /* padding: 15px 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.hair_style img {width: 70px;}
+.hair_color img {width: 70px;}
+.lips img {width: 70px;}
+.body img {width: 70px;}
+
+/* CATEGORY */
+
+.categories {
+    /* display: inline-block; */
+    text-align: center;
+    width: 200px;
+    border-right: 1px solid #666;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.hair_color, .eyes, .lips, .body {display: none;}
+.hair_style.active, .hair_color.active, .eyes.active, .lips.active, .body.active {display: block;}
+
+
+/* DISPLAY */
+.display {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.body_display {position: absolute;z-index: -1;}
+.body_display img {width: 150px;}
+.eyes_display img {width: 53px;position: absolute;top:9.5%; left: 41%;}
+.lips_display img {width: 20px;position: absolute;top:14%; left: 46.5%;}
+.hair_display img {width: 85px;position: absolute;top:0%; left: 35%;}
+
+.eyes_display img {display: none;}
+.eyes_display img.init {display: block;}
+.eyes_display img.active {display: block;}
+
+.lips_display img {display: none;}
+.lips_display img.init {display: block;}
+.lips_display img.active {display: block;}
+
+.body_display img {display: none;}
+.body_display img.init {display: block;}
+.body_display img.active {display: block;}
+
+.hair_display img {display: none;}
+.hair_display img.init {display: block;}
+.hair_display img.active {display: block;}
+
+
+/* SP版　*/
+
+@media screen and (max-width: 545px) {
+    .wrapper {
+        width: 320px;
+        height: 500px;
+        align-items: center;
+    }
+
+    .menu {width: 60px;height: 100%;}
+    .menu input[type="radio"] {display: none;}
+    .menu label {font-size: 15px; padding: 15px 0;}
+
+    .categories {width: 100px;height: 100%;}
+
+    .hair_style label {height: 80px;}
+    .hair_color img {padding: 15px 0;}
+    .eyes label, .lips label {width: auto; height: 60px;}
+
+    .hair_style img {width: 50px;}
+    .hair_color img {width: 50px;}
+    .eyes img {width: 60px;}
+    .lips img {width: 50px;}
+    .body img {width: 50px;}
+
+    .hair_display img {width: 85px;position: absolute;top: -250px; left: 29%;}
+    .eyes_display img {width: 53px;position: absolute;top: -205px; left: 37.5%;}
+    .lips_display img {width: 20px;position: absolute;top: -180px; left: 45%;}
+    
+}
